@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Librairie Renaud-Bray</title>
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/page-achat.css" />
+        <link rel="stylesheet" href="css/info.css" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="images/logoJaune.png" alt="logo Renaud Bray" />
+            </a>
+            <input type="text" placeholder="Recherche..." />
+            <div id="icones-menu">
+                <img src="images/icones/IconeLangue.png" alt="Langue" />
+                <div>
+                    <a href="">FR</a>
+                    <a href="">EN</a>
+                    <a href="">ES</a>
+                </div>
+                <img src="images/icones/IconeCompte.png" alt="Connexion" />
+                <img src="images/icones/IconePanier.png" alt="Panier" />
+            </div>
+            <nav id="barre-logo">
+                <img src="images/icones/IconeBurger.png" alt="" />
+            </nav>
+        </header>
+        <nav id="principale">
+            <div>
+                <img src="images/logoJaune.png" alt="" />
+                <a href="#"><img src="images/icones/IconeX.png" alt="" /></a>
+            </div>
+            <ul>
+                <!-- menu de navigation -->
+                <li>
+                    <a href="page-achat.html">Québécois</a>
+                    <ul>
+                        <li><a href="page-achat.html">poésie québécoise</a></li>
+                        <li><a href="page-achat.html">romans québécois</a></li>
+                        <li><a href="page-achat.html">histoire québécoise</a></li>
+                        <li><a href="page-achat.html">contes et légendes</a></li>
+                        <li><a href="page-achat.html">bandes dessinées québécoise</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="page-achat.html">Jeunesse</a>
+                    <ul>
+                        <li><a href="page-achat.html">0-5 ans</a></li>
+                        <li><a href="page-achat.html">5-10 ans</a></li>
+                        <li><a href="page-achat.html">10-18 ans</a></li>
+                        <li><a href="page-achat.html">romans jeunesse</a></li>
+                        <li><a href="page-achat.html">livres illustrés</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="page-achat.html">Romans</a>
+                    <ul>
+                        <li><a href="page-achat.html">science-fiction</a></li>
+                        <li><a href="page-achat.html">policier</a></li>
+                        <li><a href="page-achat.html">romance</a></li>
+                        <li><a href="page-achat.html">fantaisie</a></li>
+                        <li><a href="page-achat.html">roman graphique</a></li>
+                        <li><a href="page-achat.html">action/aventure</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="page-achat.html">Connaissances</a>
+                    <ul>
+                        <li><a href="page-achat.html">essais</a></li>
+                        <li><a href="page-achat.html">scolaire</a></li>
+                        <li><a href="page-achat.html">science</a></li>
+                        <li><a href="page-achat.html">développement personnel</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="page-achat.html">Loisirs</a>
+                    <ul>
+                        <li><a href="page-achat.html">cuisine</a></li>
+                        <li><a href="page-achat.html">sport</a></li>
+                        <li><a href="page-achat.html">astrologie</a></li>
+                        <li><a href="page-achat.html">art</a></li>
+                        <li><a href="page-achat.html">langue/voyage</a></li>
+                        <li><a href="page-achat.html">spiritualité</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                <p>&copy; 1965 - 2023 Renaud-Bray</p>
+            </div>
+        </nav>
+
+        <main>
+            <!-- BANNIERE -->
+            <img src="images/bannieres/banniere-science-fiction-mobile.png" alt="" id="banniereSF" />
+
+            <!-- CONTENU PRINCIPAL -->
+            <section id="zoneAchat">
+                <!-- liste défilante des coups de coeur SF -->
+                <section>
+                    <h1>Coups de coeur <img src="images/etiquettes/CoupeDeCoeur.png" alt="Image coup de coeur" /></h1>
+                    <div id="defilementX">
+                        <!-- La Guerre éternelle -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/guerre_eternelle.jpg" alt="La Guerre éternelle" />
+                            <div class="information">
+                                <span>La Guerre éternelle</span>
+                                <span>$24.99</span>
+                            </div>
+                            <div class="information">
+                                <span>Joe Haldeman</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- L'éveil du Léviathan -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/eveil_leviathan.jpg" alt="L'éveil du Léviathan" />
+                            <div class="information">
+                                <span>L'éveil du Léviathan</span>
+                                <span>$32.50</span>
+                            </div>
+                            <div class="information">
+                                <span>James S.A. Corey</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- L'homme qui mit fin à l'histoire -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/fin_histoire.jpg" alt="L'homme qui mit fin à l'histoire" />
+                            <div class="information">
+                                <span>L'homme qui mit fin à l'histoire</span>
+                                <span>$27.99</span>
+                            </div>
+                            <div class="information">
+                                <span>Ken Liu</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- La Zone du Dehors -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/zone_dehors.jpg" alt="La Zone du Dehors" />
+                            <div class="information">
+                                <span>La Zone du Dehors</span>
+                                <span>$30.00</span>
+                            </div>
+                            <div class="information">
+                                <span>Alain Damasio</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Le Meilleur des mondes -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/meilleur_mondes.jpg" alt="Le Meilleur des mondes" />
+                            <div class="information">
+                                <span>Le Meilleur des mondes</span>
+                                <span>$22.50</span>
+                            </div>
+                            <div class="information">
+                                <span>Aldous Huxley</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Les Enfants de Dune -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/enfants_dune.jpg" alt="Les Enfants de Dune" />
+                            <div class="information">
+                                <span>Les Enfants de Dune</span>
+                                <span>$26.00</span>
+                            </div>
+                            <div class="information">
+                                <span>Frank Herbert</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Les Feux de l'Eden -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/feux_eden.jpg" alt="Les Feux de l'Eden" />
+                            <div class="information">
+                                <span>Les Feux de l'Eden</span>
+                                <span>$28.75</span>
+                            </div>
+                            <div class="information">
+                                <span>Dan Simmons</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Les Robots de l'aube -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/robots_aube.jpg" alt="Les Robots de l'aube" />
+                            <div class="information">
+                                <span>Les Robots de l'aube</span>
+                                <span>$23.50</span>
+                            </div>
+                            <div class="information">
+                                <span>Isaac Asimov</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- L'Ombre du Vent -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/ombre_vent.jpg" alt="L'Ombre du Vent" />
+                            <div class="information">
+                                <span>L'Ombre du Vent</span>
+                                <span>$23.00</span>
+                            </div>
+                            <div class="information">
+                                <span>Carlos Ruiz Zafón</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Neuromancien -->
+                        <div class="gabaritLivre">
+                            <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                            <img src="images/couvertures/sci-fi/neuromancien.jpg" alt="Neuromancien" />
+                            <div class="information">
+                                <span>Neuromancien</span>
+                                <span>$19.99</span>
+                            </div>
+                            <div class="information">
+                                <span>William Gibson</span>
+                                <span></span>
+                            </div>
+                            <div class="lesBoutons">
+                                <button class="btnAjouter">
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button class="favoris">
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LIVRES -->
+                <section id="sectionLivres">
+                    <!-- FILTRE -->
+                    <section id="filtre">
+                        <h3>Prix</h3>
+                        <div id="prix">
+                            <div class="rangeSlider">
+                                <span class="sliderBarre"></span>
+                                <input
+                                    type="range"
+                                    class="valeurMin"
+                                    min="0"
+                                    name="prix"
+                                    max="1000"
+                                    value="0"
+                                    oninput="deplacementMin(event)"
+                                    onclick="deplacementMin(event)"
+                                />
+                                <input
+                                    type="range"
+                                    class="valeurMax"
+                                    min="0"
+                                    name="prix"
+                                    max="1000"
+                                    value="1000"
+                                    oninput="deplacementMax(event)"
+                                    onclick="deplacementMax(event)"
+                                />
+                                <span class="affichage affichage-min"></span>
+                                <span class="affichage affichage-max"></span>
+                            </div>
+                            <label
+                                >En rabais
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                        </div>
+                        <h3>Livres</h3>
+                        <div id="livres">
+                            <label
+                                >Livre unique
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Séries terminées
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Séries courte
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Coup de coeur
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Précommande
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                        </div>
+                        <h3>Année</h3>
+                        <div id="annee">
+                            <div class="rangeSlider">
+                                <span class="sliderBarre"></span>
+                                <input
+                                    type="range"
+                                    class="valeurMin"
+                                    name="annee"
+                                    min="0"
+                                    max="2023"
+                                    value="0"
+                                    oninput="deplacementMin(event)"
+                                    onclick="deplacementMin(event)"
+                                />
+                                <input
+                                    type="range"
+                                    class="valeurMax"
+                                    min="0"
+                                    name="annee"
+                                    max="2023"
+                                    value="2023"
+                                    oninput="deplacementMax(event)"
+                                    onclick="deplacementMax(event)"
+                                />
+                                <span class="affichage affichage-min"></span>
+                                <span class="affichage affichage-max"></span>
+                            </div>
+                        </div>
+                        <h3>Accessibilité</h3>
+                        <div id="accessibilite">
+                            <label
+                                >Livres en anglais
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                        </div>
+                        <h3>Sous-genre</h3>
+                        <div id="sous-genre">
+                            <label
+                                >Anticipation
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Post-apocalypse
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Hard science
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Space-opera
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >Cyberpunk
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <a href="#">voir plus</a>
+                        </div>
+                        <h3>Commande</h3>
+                        <div id="commande">
+                            <label
+                                >2 jours ouvrables
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                            <label
+                                >En stock
+                                <input type="checkbox" />
+                                <span class="checkbox"></span>
+                            </label>
+                        </div>
+
+                        <button class="btnAppliquer">
+                            <span>Appliquer</span>
+                            <img src="images/icones/iconeRafraichir.svg" alt="favoris" />
+                        </button>
+                    </section>
+                    <!-- SECTION FILTRE -->
+
+                    <!-- SECTION LIVRE -->
+                    <section id="section-livre-sf">
+                        <div id="filtre-tri">
+                            <h1>Livres</h1>
+                            <span>
+                                <img src="images/icones/tri.svg" alt="icone tri" />
+                                CDC
+                            </span>
+                            <span
+                                ><img src="images/icones/Filtre.svg" alt="icone filtre" />
+                                <p>A-Z</p></span
+                            >
+                            <div>
+                                <ul>
+                                    <li>A-Z</li>
+                                    <li>A-Z</li>
+                                    <li>Z-A</li>
+                                    <li>Prix croissant</li>
+                                    <li>Prix décroissant</li>
+                                    <li>Plus récent</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- SECTION REFERMABLE DETAILLÉE -->
+                        <div id="fond-noir"></div>
+                        <div id="infoLivre">
+                            <div>
+                                <div>
+                                    <img src="images/livreTest.jpg" alt="" />
+                                </div>
+                                <div>
+                                    <div>
+                                        <h1>Titre</h1>
+                                        <p>Écrit par</p>
+                                        <div>
+                                            <img src="images/icones/etoiles.svg" alt="" />
+                                            <span>(1) | 12 septembre 2013</span>
+                                        </div>
+                                        <div id="ligne-prix">
+                                            <span>50,79$</span>
+                                            <span>79,09$</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="livraison">
+                                            <img src="images/icones/iconeCamion.svg" alt="icone de camion" />
+                                            <div>
+                                                <span>
+                                                    <h4>Expédition</h4>
+                                                    <img src="images/icones/crochetVert.svg" alt="crochet vert" />
+                                                </span>
+                                                <p>Expédié en 1 à 2 semaines</p>
+                                            </div>
+                                        </div>
+                                        <div class="livraison">
+                                            <img src="images/icones/iconeSac.svg" alt="icone de sac d'achat" />
+                                            <div>
+                                                <span>
+                                                    <h4>Acheter et ramasser</h4>
+                                                    <img src="images/icones/crochetVert.svg" alt="crochet vert" />
+                                                </span>
+                                                <p>Ramassage sans frais au magasin <u>Place Versaille</u></p>
+                                            </div>
+                                        </div>
+                                        <div class="livraison">
+                                            <img src="images/icones/iconeMagasin.svg" alt="icone de magasin" />
+                                            <div>
+                                                <span>
+                                                    <h4>En magasin</h4>
+                                                    <img src="images/icones/xRouge.svg" alt="crochet rouge" />
+                                                </span>
+                                                <p>En rupture de stock au magasin <u>Place Versaille</u></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Résumé</h4>
+                                <p>
+                                    Caillou aime les spaghettis. Mais il mange si rapidement son repas qu'il en attrape le hoquet ! Papa propose à
+                                    Caillou plusieurs façons rigolotes de faire partir son hoquet. Mais il semble que la patience soit le meilleur
+                                    remède. Caillou aime les spaghettis. Mais il mange si rapidement son repas qu’il en attrape le hoquet ! Papa
+                                    propose à Caillou plusieurs façons rigolotes de faire partir son hoquet.
+                                </p>
+                            </div>
+                            <div>
+                                <div>
+                                    <button>-</button>
+                                    <span>1</span>
+                                    <button>+</button>
+                                </div>
+                                <button>
+                                    <span>ajouter</span>
+                                    <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                </button>
+                                <button>
+                                    <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- SECTION GABARIT -->
+                        <div id="section-gabarit">
+                            <!-- 2001: l'Odyssée de l'espace -->
+                            <div class="gabaritLivre">
+                                <img src="images/couvertures/sci-fi/odyssee_espace.jpg" alt="2001: l'Odyssée de l'espace" />
+                                <div class="information">
+                                    <span>2001: l'Odyssée de l'espace</span>
+                                    <span>$21.75</span>
+                                </div>
+                                <div class="information">
+                                    <span>Arthur C. Clarke</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Blade Runner -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/EtiquetteNouveaute.png" alt="" class="nouveau" />
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/blade_runner.jpg" alt="Blade Runner" />
+                                <div class="information">
+                                    <span>Blade Runner</span>
+                                    <span>$22.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>Philip K. Dick</span>
+                                    <span>$29.99</span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Dune -->
+                            <div class="gabaritLivre">
+                                <img src="images/couvertures/sci-fi/dune.jpg" alt="Dune" />
+                                <div class="information">
+                                    <span>Dune</span>
+                                    <span>$25.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>Frank Herbert</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Les Enfants de Dune -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/enfants_dune.jpg" alt="Les Enfants de Dune" />
+                                <div class="information">
+                                    <span>Les Enfants de Dune</span>
+                                    <span>$26.00</span>
+                                </div>
+                                <div class="information">
+                                    <span>Frank Herbert</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Enfants d'Icare -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/EtiquetteNouveaute.png" alt="" class="nouveau" />
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/enfants_icare.jpg" alt="Enfants d'Icare" />
+                                <div class="information">
+                                    <span>Enfants d'Icare</span>
+                                    <span>$29.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>Arthur C. Clarke</span>
+                                    <span>$34.99</span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Étoile de Pandore -->
+                            <div class="gabaritLivre">
+                                <img src="images/couvertures/sci-fi/etoile_pandore.jpg" alt="Étoile de Pandore" />
+                                <div class="information">
+                                    <span>Étoile de Pandore</span>
+                                    <span>$32.00</span>
+                                </div>
+                                <div class="information">
+                                    <span>Peter F. Hamilton</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- L'éveil du Léviathan -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/eveil_leviathan.jpg" alt="L'éveil du Léviathan" />
+                                <div class="information">
+                                    <span>L'éveil du Léviathan</span>
+                                    <span>$32.50</span>
+                                </div>
+                                <div class="information">
+                                    <span>James S.A. Corey</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Les Feux de l'Eden -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/feux_eden.jpg" alt="Les Feux de l'Eden" />
+                                <div class="information">
+                                    <span>Les Feux de l'Eden</span>
+                                    <span>$28.75</span>
+                                </div>
+                                <div class="information">
+                                    <span>Dan Simmons</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Fondation -->
+                            <div class="gabaritLivre">
+                                <img src="images/couvertures/sci-fi/fondation.jpg" alt="Fondation" />
+                                <div class="information">
+                                    <span>Fondation</span>
+                                    <span>$18.50</span>
+                                </div>
+                                <div class="information">
+                                    <span>Isaac Asimov</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- La Guerre éternelle -->
+                            <div class="gabaritLivre">
+                                <img src="images/couvertures/sci-fi/guerre_eternelle.jpg" alt="La Guerre éternelle" />
+                                <div class="information">
+                                    <span>La Guerre éternelle</span>
+                                    <span>$24.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>Joe Haldeman</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Guide du voyageur galactique -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/EtiquetteNouveaute.png" alt="" class="nouveau" />
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/guide_galactique.jpg" alt="Guide du voyageur galactique" />
+                                <div class="information">
+                                    <span>Guide du voyageur galactique</span>
+                                    <span>$27.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>Douglas Adams</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- L'homme qui mit fin à l'histoire -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/fin_histoire.jpg" alt="L'homme qui mit fin à l'histoire" />
+                                <div class="information">
+                                    <span>L'homme qui mit fin à l'histoire</span>
+                                    <span>$27.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>Ken Liu</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Hyperion -->
+                            <div class="gabaritLivre">
+                                <img src="images/couvertures/sci-fi/hyperion.jpg" alt="Hyperion" />
+                                <div class="information">
+                                    <span>Hyperion</span>
+                                    <span>$26.50</span>
+                                </div>
+                                <div class="information">
+                                    <span>Dan Simmons</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Le Meilleur des mondes -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/meilleur_mondes.jpg" alt="Le Meilleur des mondes" />
+                                <div class="information">
+                                    <span>Le Meilleur des mondes</span>
+                                    <span>$22.50</span>
+                                </div>
+                                <div class="information">
+                                    <span>Aldous Huxley</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Neuromancien -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/neuromancien.jpg" alt="Neuromancien" />
+                                <div class="information">
+                                    <span>Neuromancien</span>
+                                    <span>$19.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>William Gibson</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- L'Ombre du Vent -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/ombre_vent.jpg" alt="L'Ombre du Vent" />
+                                <div class="information">
+                                    <span>L'Ombre du Vent</span>
+                                    <span>$23.00</span>
+                                </div>
+                                <div class="information">
+                                    <span>Carlos Ruiz Zafón</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Problème à trois corps -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/EtiquetteNouveaute.png" alt="" class="nouveau" />
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/probleme_trois_corps.jpg" alt="Problème à trois corps" />
+                                <div class="information">
+                                    <span>Problème à trois corps</span>
+                                    <span>$27.50</span>
+                                </div>
+                                <div class="information">
+                                    <span>Liu Cixin</span>
+                                    <span>$31.99</span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Les Robots de l'aube -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/robots_aube.jpg" alt="Les Robots de l'aube" />
+                                <div class="information">
+                                    <span>Les Robots de l'aube</span>
+                                    <span>$23.50</span>
+                                </div>
+                                <div class="information">
+                                    <span>Isaac Asimov</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Stratégie Ender -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/EtiquetteNouveaute.png" alt="" class="nouveau" />
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/strategie_ender.jpg" alt="Stratégie Ender" />
+                                <div class="information">
+                                    <span>Stratégie Ender</span>
+                                    <span>$20.99</span>
+                                </div>
+                                <div class="information">
+                                    <span>Orson Scott Card</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Ubik -->
+                            <div class="gabaritLivre">
+                                <img src="images/couvertures/sci-fi/ubik.jpg" alt="Ubik" />
+                                <div class="information">
+                                    <span>Ubik</span>
+                                    <span>$23.50</span>
+                                </div>
+                                <div class="information">
+                                    <span>Philip K. Dick</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- La Zone du Dehors -->
+                            <div class="gabaritLivre">
+                                <img src="images/etiquettes/CoupeDeCoeur.png" alt="" class="CDC" />
+                                <img src="images/couvertures/sci-fi/zone_dehors.jpg" alt="La Zone du Dehors" />
+                                <div class="information">
+                                    <span>La Zone du Dehors</span>
+                                    <span>$30.00</span>
+                                </div>
+                                <div class="information">
+                                    <span>Alain Damasio</span>
+                                    <span></span>
+                                </div>
+                                <div class="lesBoutons">
+                                    <button class="btnAjouter">
+                                        <span>ajouter</span>
+                                        <img src="images/icones/IconePanierAjout.svg" alt="favoris" />
+                                    </button>
+                                    <button class="favoris">
+                                        <img src="images/icones/favoriPlus.svg" alt="favoris" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <img src="images/logoBlanc.png" alt="logo Renaud Bray" />
+                <div>
+                    <section>
+                        <h4>À Propos</h4>
+                        <a href="#">Infolettre</a>
+                        <a href="#">Coups de coeur</a>
+                        <a href="#">Carte cadeau</a>
+                        <a href="#">Emplois</a>
+                    </section>
+                    <section>
+                        <h4>Nos Succursales</h4>
+                        <a href="#">Trouver un succursale</a>
+                        <a href="#">Heures d'ouverture</a>
+                    </section>
+                    <section>
+                        <h4>Achats en lignes</h4>
+                        <a href="#">Besoin d'aide?</a>
+                        <a href="#">Suivi de commande</a>
+                        <a href="#">Livraisons</a>
+                        <a href="#">Retours</a>
+                    </section>
+                    <section>
+                        <h4>Légal</h4>
+                        <a href="#">Termes et conditions</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions d'utilisations</a>
+                    </section>
+                    <section>
+                        <h4>Contact</h4>
+                        <a href="#">Envoyer un courriel</a>
+                        <a href="#">Laisser un commentaire</a>
+                        <div>
+                            <div>
+                                <p>À Montréal</p>
+                                <p>514 342-2815</p>
+                            </div>
+                            <div>
+                                <p>Ailleurs au Canada</p>
+                                <p>1 888 746-2283</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div>
+                <a href="https://www.instagram.com/"><img src="images/icones/Insta.png" alt="" /></a>
+                <a href="https://www.facebook.com/"><img src="images/icones/Facebook.png" alt="" /></a>
+                <a href="https://www.pinterest.com/"><img src="images/icones/Pint.png" alt="" /></a>
+                <a href="https://twitter.com/"><img src="images/icones/Twitter.png" alt="" /></a>
+            </div>
+
+            <p>&copy; 1965 - 2023 Renaud Bray</p>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/achat.js"></script>
+    </body>
+</html>

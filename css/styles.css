@@ -1,0 +1,951 @@
+:root {
+    --jaune-Renaud-Bray: #ffcc00;
+    --gris-Renaud-Bray: gray;
+    --blanc: white;
+    --noir: black;
+}
+/* ====================================== Styles généraux ===============================*/
+@font-face {
+    font-family: "Alternate Gothic";
+    src: url("../fontes/AlternateGothicATF-Demi.otf");
+
+    /*font-family: "AmericanTypewriter";
+    src: url("../fontes/ITCAmericanTypewriterBold.otf");*/
+}
+@font-face {
+    font-family: "AmericanTypewriter";
+    src: url("../fontes/ITCAmericanTypewriterBold.otf");
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+/* classe réutilisable toujours prioritaire*/
+.visible {
+    display: flex !important;
+}
+.invisible {
+    display: none !important;
+}
+/*************************** Général ***************************/
+html {
+    font-size: clamp(18px, 2vw, 24px);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+h1,
+h2,
+h4 {
+    /* Titre */
+    text-transform: uppercase;
+    margin: 0;
+}
+a {
+    /* Remise à normale des liens */
+    color: var(--blanc);
+    text-decoration: none;
+}
+a:hover {
+    /* Effet de survol des liens */
+    color: var(--jaune-Renaud-Bray);
+}
+
+/*************************** Header ***************************/
+header {
+    background-color: var(--noir);
+    display: flex;
+    height: 35vw;
+    padding: 5vw;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+header a {
+    height: auto;
+}
+header a img {
+    /* Logo header */
+    width: 38vw;
+    height: auto;
+    margin-right: 20vw;
+    /* margin-bottom: 10vw; */
+}
+header input {
+    /* position: absolute; */
+    border: none;
+    border-radius: 30px;
+    font-size: 0.7rem;
+    padding: 5px 15px;
+    width: 65%;
+    height: 7vw;
+    margin-top: 5vw;
+}
+
+#icones-menu > img {
+    /* Icones du menu */
+    width: 7vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+}
+.bsc-account-user {
+    /* Icone de profil */
+    background-color: var(--jaune-Renaud-Bray);
+}
+
+#barre-logo {
+    /* Barre de menu */
+    width: 8vw;
+    margin-top: 2vh;
+    align-self: flex-end;
+}
+#icones-menu div {
+    /* Menu déroulant */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--jaune-Renaud-Bray);
+    background-color: var(--noir);
+    font-size: 7vw;
+    height: 30vw;
+    width: 20vw;
+
+    right: 15vw;
+    position: absolute;
+    flex-grow: 1;
+}
+#icones-menu div a {
+    /* Liens du menu déroulant */
+    border-bottom: var(--jaune-Renaud-Bray) 3px solid;
+    color: var(--jaune-Renaud-Bray);
+    width: 50%;
+    flex-grow: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Alternate Gothic";
+}
+#icones-menu div a:hover {
+    /* Effet de survol des liens du menu déroulant */
+    color: var(--blanc);
+}
+#icones-menu div a:last-of-type {
+    /* Dernier liens du menu déroulant */
+    border-bottom: none;
+}
+#principale {
+    /* Nav des sections */
+    z-index: 10;
+    display: none;
+    left: 0vw;
+    transform: translateX(100%);
+    position: fixed;
+    background-color: var(--blanc);
+    color: var(--noir);
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+    animation: none;
+}
+#principale div:first-of-type {
+    /* Barre supérieur du menu sur mobile */
+    background-color: var(--noir);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+}
+#principale div:last-of-type {
+    /* Barre inférieur du menu sur mobile */
+    background-color: var(--noir);
+    color: var(--blanc);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#principale div:first-of-type img {
+    /* Logo du menu sur mobile */
+    width: 40vw;
+    height: auto;
+}
+#principale div:first-of-type a img {
+    /* X du menu sur mobile */
+    width: 10vw;
+    height: auto;
+}
+#principale a {
+    /* Textes de la nav */
+    color: var(--noir);
+    font-family: "Alternate Gothic";
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#principale ul {
+    /* Liste de la nav */
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* visibility: visible; */
+}
+#principale li {
+    /* Liens de la nav */
+    border-bottom: 3px solid var(--noir);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#principale li:last-of-type {
+    /* Dernier liens de la nav */
+    border-bottom: none;
+}
+nav#principale ul li ul {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/*************************** Main ***************************/
+
+main {
+    /* Contenu principal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    /* Titres de sections de contenu principal */
+    font-family: "Alternate Gothic";
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    margin-left: 6vw;
+    margin-bottom: 4vh;
+}
+main section {
+    /* Sections du fil*/
+    margin: 5vh 0;
+}
+main #banniereHalloween img {
+    /* Bannière d'halloween */
+    width: 100vw;
+}
+main section h1 img {
+    /* Icones des titres de sections */
+    width: 10vw;
+    height: auto;
+    margin-right: 5vw;
+}
+#defilementX {
+    /* Section CDC du fil */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8vw;
+    /* height:50vh; */
+}
+#defilementX .gabaritLivre {
+    /* Gabarit des livres du défilement */
+    height: 40vh;
+    margin: 0 2vw;
+    position: relative;
+    margin-bottom: 16vh;
+}
+#defilementX .information {
+    /* Informations des livres du défilement */
+    flex-direction: column;
+}
+#defilementX img:first-of-type {
+    /* Pochette des livres du défilement */
+    right: 10%;
+}
+
+#defilementX div:first-of-type {
+    /* Premier livre du défilement */
+    margin-left: 0;
+}
+#defilementX div:last-of-type {
+    /* Dernier livre du défilement */
+    margin-right: 0;
+}
+#defilementX::-webkit-scrollbar {
+    /* Scrollbar du défilement */
+    border-radius: 20px;
+    height: 10px;
+    width: 60vw;
+    margin: 0 100px;
+}
+#defilementX::-webkit-scrollbar-track {
+    /* Fond de la scrollbar du défilement */
+    border-radius: 10px;
+}
+#defilementX::-webkit-scrollbar-thumb {
+    /* Poignée de la scrollbar du défilement */
+    background-color: var(--jaune-Renaud-Bray);
+    border-radius: 10px;
+}
+
+#section-cat-pop {
+    /* Section des catégories populaires */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 8vw;
+}
+#section-cat-pop a {
+    color: black;
+    margin-bottom: 8vh;
+}
+#section-cat-pop > img {
+    /* Images des catégories populaires */
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+.cat-pop {
+    /* Catégories populaires */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 80vw;
+    background-size: cover;
+    padding-top: 10vh;
+}
+
+/* Tous les fond particuliers de chaque sections populaires */
+#aventure {
+    padding-top: 6vh;
+    background-image: url(../images/FondAction.png);
+}
+#cuisine {
+    background-image: url(../images/FondCuisine.png);
+}
+#fantaisie {
+    background-image: url(../images/FondFantaisie.png);
+}
+#policier {
+    background-image: url(../images/FondPolicier.png);
+}
+#quebec {
+    padding-top: 6vh;
+    background-image: url(../images/FondQuebec.png);
+}
+#science-fiction {
+    padding-top: 6vh;
+    background-image: url(../images/FondScienceFiction.png);
+}
+.cat-pop h2 {
+    /* Titre des sections */
+    font-family: "Alternate Gothic";
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.3rem;
+    background-color: var(--blanc);
+    padding: 0 2vw;
+    margin-top: 2vh;
+    z-index: 1;
+}
+
+.iconesSections {
+    /* Icones 3d des sections */
+    width: 30vw;
+    position: absolute;
+}
+
+/* Toutes les précisions pour les icones 3d des sections */
+#explosion {
+    top: 0;
+    right: 0;
+    transform: rotate(8deg);
+    transition: 0.5s ease;
+}
+#carte {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-15deg);
+    transition: 0.5s ease;
+}
+#bouffe {
+    top: 5%;
+    right: 0;
+    transform: rotate(-20deg);
+    transition: 0.5s ease;
+}
+#poele {
+    bottom: -5%;
+    left: 0;
+    transform: rotate(10deg) scaleX(-1);
+    transition: 0.5s ease;
+}
+#epee {
+    top: 0;
+    left: 0;
+    transform: rotate(20deg);
+    transition: 0.5s ease;
+}
+#mage {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-70deg);
+    transition: 0.5s ease;
+}
+#potion {
+    bottom: 4%;
+    right: 8%;
+    transform: rotate(-5deg);
+    transition: 0.5s ease;
+}
+#badge {
+    bottom: 5%;
+    right: 20%;
+    transform: rotate(-10deg);
+    transition: 0.5s ease;
+}
+#profilage {
+    top: 0;
+    left: 0;
+    transform: rotate(12deg);
+    transition: 0.5s ease;
+}
+#livre {
+    bottom: 0;
+    left: 30%;
+    transform: rotate(12deg);
+    transition: 0.5s ease;
+}
+#fusee {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-20deg);
+    transition: 0.5s ease;
+}
+#ovni {
+    top: 0;
+    left: 0;
+    transform: rotate(-30deg);
+    transition: 0.5s ease;
+}
+#fusil {
+    top: -9%;
+    right: -5%;
+    transform: rotate(20deg);
+    transition: 0.5s ease;
+}
+
+.triangle {
+    clip-path: polygon(5% 100%, 100% 0%, 100% 100%);
+    background-color: var(--jaune-Renaud-Bray);
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.triangle img {
+    width: 12vw;
+    height: auto;
+    position: absolute;
+    bottom: 4vw;
+    right: 2vw;
+}
+/*************************** Footer ***************************/
+footer {
+    /* Pied de page */
+    background-color: var(--noir);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh;
+    color: var(--blanc);
+}
+h4 {
+    /* Titre sections */
+    font-weight: bold;
+    margin-bottom: 0.8vh;
+}
+footer > div {
+    /* 2 bandes dans footer (section + reseaux) */
+    position: relative;
+    width: 100%;
+}
+footer a,
+footer p {
+    /* Liens + num tel */
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 0.8vh;
+}
+footer > div > div {
+    /* Enesmble sections */
+    display: flex;
+    flex-direction: column;
+}
+footer > div > img {
+    /* Logo */
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+}
+footer section {
+    /* Sections */
+    margin: 0 1vw;
+    margin-bottom: 4vh;
+    width: 70%;
+}
+footer section:last-of-type {
+    /* Dernière section */
+    width: 100%;
+    margin-bottom: 3vh;
+}
+footer section:last-of-type div {
+    /* 2 num tel dans dernière section */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+footer section:last-of-type div div {
+    /* Num tel */
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+footer > div:first-of-type {
+    /* Première bande avec Logo + sections */
+    border-bottom: 1px solid var(--blanc);
+}
+footer > div:last-of-type {
+    /* Dernière bande avec reseaux */
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 3vh 0;
+}
+footer > div:last-of-type img {
+    /* Icones reseaux */
+    height: 6vw;
+    width: auto;
+}
+footer > p {
+    /* Mentions légales */
+    text-align: center;
+}
+footer p {
+    /* Texte dans footer */
+    margin: 0;
+}
+
+/* ====================================== Media Queries ===============================*/
+/* Media query pour 756px ou plus */
+@media screen and (min-width: 756px) {
+    /*************************** @Header ***************************/
+    header {
+        /* Header */
+        height: 10vw;
+        padding: 2vw;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+    }
+    header a img {
+        /* Logo header */
+        width: auto;
+        height: 4vw;
+        margin: 0;
+    }
+    header input {
+        /* Barre de recherche */
+        border-radius: 50px;
+        width: 50%;
+        height: 5vh;
+        margin: 0;
+    }
+    #icones-menu > img {
+        /* Icones du menu */
+        width: 3vw;
+        animation: iconeMenu 2s 1 ease-out forwards;
+    }
+    #icones-menu > img:first-of-type {
+        /* Icones de langue */
+        margin-left: 0;
+    }
+    #icones-menu div {
+        /* Menu déroulant */
+        font-size: 3vw;
+        height: 20vw;
+        width: 15vw;
+        right: 10vw;
+        position: absolute;
+        flex-grow: 1;
+    }
+    #barre-logo {
+        /* Barre de menu */
+        display: none;
+    }
+    #principale {
+        /* Nav des sections */
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 6;
+        transform: translateY(15vh);
+        height: 13vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 3px solid var(--noir);
+        transition: 0.3s ease-in-out;
+    }
+
+    #principale ul {
+        /* Liste de la nav */
+        width: 100%;
+        flex-direction: row;
+    }
+    #principale div:first-of-type,
+    #principale div:last-of-type {
+        /* Entete et footer du menu déroulant */
+        display: none;
+    }
+    #principale li {
+        /* Liens de la nav */
+        border: none;
+    }
+    #principale a {
+        /* Textes de la nav */
+        padding: 0 4vw;
+        font-size: 1.2rem;
+        transition: 0.2s ease;
+    }
+
+    #principale li:hover > a {
+        /* Effet de survol des liens de la nav */
+        color: var(--jaune-Renaud-Bray);
+        transform: scale(1.2);
+        transition: 0.2s ease;
+    }
+    nav#principale ul li ul {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: var(--blanc);
+        position: absolute;
+        width: 20%;
+        height: auto;
+        border: var(--noir) 3px solid;
+        border-top: var(--blanc) 3px solid;
+        top: 12.5vh;
+    }
+    nav#principale ul li ul li {
+        width: 80%;
+        border-bottom: 2px var(--noir) solid;
+    }
+    nav#principale ul li ul li a {
+        padding: 1.3vw 0;
+    }
+    nav#principale ul li:hover ul {
+        display: flex;
+    }
+
+    /*************************** @Main ***************************/
+
+    main section {
+        /* Sections du fil*/
+        margin: 5vh 0;
+    }
+
+    main .premierElement {
+        /* Permiere element du fil*/
+        margin-top: 15vh;
+    }
+    main section h1 img {
+        /* Icones des titres de sections */
+        width: 3vw;
+        height: auto;
+        margin-right: 1.5vw;
+    }
+    main #banniereSF {
+        /* Bannière de la section science-fiction */
+        margin-top: 13vh;
+    }
+    #defilementX .btnAjouter,
+    #defilementX .favoris {
+        /* Boutons du défilement */
+        height: 5vh;
+    }
+    #defilementX .btnAjouter {
+        /* Bouton ajouter au panier du défilement */
+        width: 60%;
+        font-size: 0.6em;
+    }
+    #defilementX button img {
+        /* Icones des boutons du défilement */
+        width: 1.5vw;
+    }
+    #section-cat-pop {
+        /* Section des catégories populaires */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    #section-cat-pop a {
+        /* Section des catégories populaires */
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 8vw;
+    }
+    .cat-pop {
+        /* Catégories populaires */
+        width: 25vw;
+        height: 25vw;
+        cursor: pointer;
+        position: relative;
+    }
+    .fondObscure {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 0, 0, 0.1);
+        transition: background-color 0.2s ease;
+    }
+    .cat-pop h2 {
+        /* Titre des sections */
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: 0.1rem;
+        padding: 0 1vw;
+        z-index: 2;
+    }
+    .iconesSections {
+        /* Icones 3d des sections */
+        width: 11vw;
+    }
+
+    .triangle {
+        /* Triangle jaune contenant les fleches */
+        width: 10vw;
+        height: 10vw;
+        z-index: 2;
+    }
+    .triangle img {
+        /* Flèches */
+        width: 4vw;
+        bottom: 1vw;
+        right: 1vw;
+    }
+    .cat-pop:hover .triangle img {
+        /* animations des flèches en survol */
+        animation: fleche 0.5s 1;
+    }
+    .cat-pop:hover .fondObscure {
+        background-color: rgb(0, 0, 0, 0);
+    }
+    .cat-pop:hover #explosion,
+    .cat-pop:hover #carte,
+    .cat-pop:hover #bouffe,
+    .cat-pop:hover #epee,
+    .cat-pop:hover #potion,
+    .cat-pop:hover #badge,
+    .cat-pop:hover #profilage,
+    .cat-pop:hover #livre,
+    .cat-pop:hover #fusee,
+    .cat-pop:hover #ovni,
+    .cat-pop:hover #fusil {
+        /* Animation générale des icones 3d */
+        transform: rotate(0deg);
+        transition: 0.5s ease;
+    }
+    .cat-pop:hover #poele {
+        /* Animation spéciale de la poele */
+        transform: rotate(0deg) scaleX(-1);
+        transition: 0.5s ease;
+    }
+    .cat-pop:hover #mage {
+        /* Animation spéciale du baton de mage */
+        transform: rotate(-60deg);
+        transition: 0.5s ease;
+    }
+
+    /*************************** @Footer ***************************/
+    h4 {
+        /* Titre sections */
+        margin-bottom: 1.2vh;
+        font-size: 0.6rem;
+    }
+
+    footer > div {
+        /* 2 bandes dans footer (section + reseaux)*/
+        display: flex;
+        justify-content: space-between;
+    }
+    footer a,
+    footer p {
+        /* Liens + num tel */
+        font-size: 0.5rem;
+    }
+    footer p {
+        /* Texte dans footer */
+        margin: 0;
+        margin-top: 0.5vh;
+    }
+    footer a {
+        /* Liens dans footer */
+        margin-top: 0.8vh;
+    }
+    footer > div > div {
+        /* Enesmble sections */
+        flex-direction: row;
+        width: 80%;
+        margin-left: 4vw;
+        justify-content: space-between;
+    }
+    footer > div > img {
+        /* Logo */
+        position: relative;
+        height: 4vw;
+        width: auto;
+    }
+    footer section:last-of-type div {
+        /* 2 num tel dans dernière section */
+        margin-top: 0.4vh;
+    }
+
+    footer section:last-of-type div div:first-of-type {
+        /* Num tel MTL */
+        width: 35%;
+    }
+
+    footer > div:last-of-type {
+        /* Dernière bande avec reseaux */
+        width: 20%;
+    }
+    footer > div:last-of-type img {
+        /* Icones reseaux */
+        height: 1.5vw;
+        transition: 0.5s ease;
+    }
+    footer > div:last-of-type img:hover {
+        /* Icones reseaux */
+        transform: scale(1.5);
+        transition: 0.5s ease;
+    }
+    /*=================================== page d'achat =======================================*/
+    #section-livre-sf > div:first-of-type,
+    #section-livre-sf > div:last-of-type {
+        /* 2 sections (images et expedition) */
+        flex-direction: row;
+    }
+    section #filtre {
+        /* Filtre de la section */
+        display: flex;
+    }
+    #section-livre-sf div .gabaritLivre {
+        /* Gabarit des livres du défilement */
+        width: 15vw;
+        height: auto;
+    }
+}
+/* ====================================== Animations ===============================*/
+@keyframes fleche {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    49% {
+        transform: translateX(150%);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+    51% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+    52% {
+        transform: translateX(-150%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes apparitionMenu {
+    0% {
+        transform: translateY(10vh);
+    }
+    100% {
+        transform: translateY(0vh);
+    }
+}
+@keyframes disparitionMenu {
+    0% {
+        transform: translateY(0vh);
+    }
+    100% {
+        transform: translateY(10vh);
+    }
+}
+
+/* ====================================== Scrollbar ===============================*/
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--gris-Renaud-Bray);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--jaune-Renaud-Bray);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--jaune-Renaud-Bray);
+}

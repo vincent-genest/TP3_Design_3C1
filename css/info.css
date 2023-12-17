@@ -1,0 +1,315 @@
+/*************************** Général ***************************/
+#infoLivre {
+    /* Pop up entier */
+    background-color: var(--jaune-Renaud-Bray);
+    width: 100vw;
+    height: 120vw;
+    position: absolute;
+    /* z-index: 20; */
+    left: 0;
+    bottom: 0;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* display: none; */
+    position: fixed;
+    bottom: 0;
+    z-index: 101;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+#fond-noir {
+    /* Fond noir */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+}
+#infoLivre h1,
+#infoLivre h4,
+#infoLivre p {
+    /* Texte */
+    margin: 0;
+}
+#infoLivre > div > div {
+    /* 3 sections (images résumé et infos) */
+    width: 48%;
+}
+button{
+    cursor: pointer;
+}
+/*************************** Section Info ***************************/
+
+#infoLivre > div:first-of-type {
+    /* Pochette et info techniques */
+    display: flex;
+    justify-content: space-between;
+    margin: 5vw 5vw 0 5vw;
+}
+#infoLivre > div:first-of-type > div:last-of-type {
+    /* 2 sections (images et expedition) */
+    display: flex;
+    flex-direction: column;
+}
+#infoLivre > div > div:first-of-type img {
+    /* Pochette */
+    width: 100%;
+    height: auto;
+}
+#infoLivre #ligne-prix {
+    /* div (lignes) des prix */
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    margin-top: 1vh;
+}
+#infoLivre #ligne-prix span {
+    /* prix */
+    font-size: 1rem;
+    font-family: AmericanTypewriter;
+    margin-bottom: 2%;
+}
+#infoLivre #ligne-prix span:last-of-type {
+    /* ancien prix */
+    align-self: flex-start;
+    font-size: 0.5rem;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    text-decoration: line-through;
+    color: var(--gris-Renaud-Bray);
+}
+#infoLivre > div:first-of-type > div:last-of-type > * {
+    /* Section expédition */
+    border-bottom: 1px black solid;
+    flex-grow: 1;
+}
+.livraison {
+    /* Une ligne de la section expedition */
+    display: flex;
+    margin: 1vh 0;
+}
+.livraison > img {
+    /* Une img de la section expedition */
+    width: 13%;
+    height: auto;
+    margin-right: 2vw;
+}
+.livraison span {
+    /* Type d'expédition et disponibilité */
+    display: flex;
+}
+.livraison span h4 {
+    /* Type d'expédition */
+    padding-top: 5%;
+    font-size: 0.6rem;
+    text-transform: none;
+}
+.livraison span img {
+    /* Disponibilité */
+    margin-left: 3%;
+}
+
+/*************************** Résumé ***************************/
+#infoLivre > div:nth-of-type(2) {
+    /* Resume */
+    display: flex;
+    height: 20%;
+    margin: 5vw;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+#infoLivre > div:nth-of-type(2) p {
+    /* Resume texte*/
+    margin-top: 0.5vh;
+}
+#infoLivre > div:nth-of-type(2) h4 {
+    /* titre Resume */
+    margin-top: 1vh;
+}
+/*************************** Boutons ***************************/
+#infoLivre > div:last-of-type {
+    /* Section ds boutons */
+    background-color: black;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    padding: 4vw;
+    font-family: "Alternate Gothic";
+    font-size: 3em;
+    position: absolute;
+    bottom: 0;
+}
+#infoLivre > div:last-of-type > * {
+    /* Les boutons */
+    text-transform: uppercase;
+    background-color: var(--jaune-Renaud-Bray);
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vw;
+    margin: 0 2vw;
+}
+#infoLivre > div:last-of-type img {
+    /* Icone de boutons */
+    width: 6vw;
+}
+#infoLivre > div:last-of-type > :first-child {
+    /* Bouton quantité */
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    border: 3px solid var(--jaune-Renaud-Bray);
+}
+#infoLivre > div:last-of-type > :nth-child(2) {
+    /* Bouton panier */
+    flex: 3;
+}
+#infoLivre > div:last-of-type > :nth-child(2) img {
+    /* Icone panier */
+    margin-left: 2vw;
+}
+#infoLivre > div:last-of-type > :last-child {
+    /* Bouton liste */
+    flex: 1;
+}
+#infoLivre > div:last-of-type > :first-child > * {
+    /* Interieur bouton quantité */
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 1em;
+    padding: 0 1vw;
+    text-align: center;
+    color: var(--jaune-Renaud-Bray);
+}
+#infoLivre > div:last-of-type > * {
+    transition: background-color 0.2s ease-in-out;
+}
+#infoLivre > div:last-of-type > * img {
+    transition: filter 0.2s ease-in-out;
+}
+#infoLivre > div:last-of-type > *:hover {
+    background-color: var(--noir);
+    color: var(--jaune-Renaud-Bray);
+    cursor: pointer;
+    border: 3px solid var(--jaune-Renaud-Bray);
+}
+#infoLivre > div:last-of-type > *:hover img {
+    filter: invert(70%) sepia(77%) saturate(571%) hue-rotate(358deg) brightness(103%) contrast(104%);
+}
+
+/*************************** @media ***************************/
+@media screen and (min-width: 756px) {
+    /*************************** @Général ***************************/
+    #infoLivre {
+        /* Pop up entier */
+        width: 60vw;
+        height: 100vh;
+        transform: translateX(-100%);
+    }
+
+    /*************************** @Info ***************************/
+    #infoLivre > div:first-of-type {
+        /* Pochette et info techniques */
+        justify-content: space-around;
+        height: 65%;
+        margin: 2vw 2vw 0 2vw;
+    }
+    #infoLivre > div:first-of-type > div {
+        /* Interieur pochette et info techniques */
+        width: 35%;
+    }
+    #infoLivre > div:first-of-type > div:first-of-type img {
+        /* Pochette */
+        height: 100%;
+        width: auto;
+    }
+    #infoLivre > div:first-of-type > div:last-of-type {
+        /* Section info */
+        font-size: 0.7rem;
+        width: 55%;
+    }
+    #infoLivre > div:first-of-type > div:last-of-type > * {
+        /* Interieur section info */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #infoLivre h1 {
+        /* Titre */
+        font-size: 3rem;
+    }
+    #infoLivre #ligne-prix span {
+        /* prix */
+        font-size: 2rem;
+    }
+    #infoLivre #ligne-prix span:last-of-type {
+        /* ancien prix */
+        font-size: 1rem;
+    }
+    .livraison span h4 {
+        /* Type d'expédition */
+        font-size: 0.9rem;
+    }
+    .livraison p {
+        /* info d'expédition */
+        font-size: 0.6rem;
+    }
+    .livraison span img {
+        /* Disponibilité */
+        margin-left: 3%;
+        margin-top: 5%;
+        height: 1.5vw;
+    }
+    .livraison > img {
+        /* Img de la section expedition */
+        width: 8%;
+    }
+    /*************************** @Résumé ***************************/
+    #infoLivre > div:nth-of-type(2) {
+        /* Resume */
+        margin: 0 5%;
+    }
+    #infoLivre > div:nth-of-type(2) h4 {
+        /* titre Resume */
+        font-size: 1rem;
+    }
+    #infoLivre > div:nth-of-type(2) p {
+        /* Resume texte*/
+        margin-top: 1vh;
+        font-size: 1.2em;
+    }
+    /*************************** @Boutons ***************************/
+    #infoLivre > div:last-of-type {
+        /* Section ds boutons */
+        padding: 0;
+    }
+    #infoLivre > div:last-of-type > * {
+        /* Les boutons */
+        margin: 1vw 3vw;
+        padding: 0;
+    }
+    #infoLivre > div:last-of-type img {
+        /* Icone de boutons */
+        width: 3vw;
+    }
+    #infoLivre > div:last-of-type > :first-child {
+        /* Bouton quantité */
+        font-size: 1.4em;
+    }
+    #infoLivre > div:last-of-type > :first-child > * {
+        /* Interieur bouton quantité */
+        display: flex;
+        align-items: center;
+    }
+}
