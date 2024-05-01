@@ -177,9 +177,6 @@ div .information:nth-of-type(2) {
     color: var(--gris-Renaud-Bray);
     margin-top: 0;
 }
-div .information:nth-of-type(2) span:last-of-type {
-    text-decoration: line-through;
-}
 .information span:last-of-type {
     font-family: "AmericanTypewriter", sans-serif;
     margin-top: auto;
